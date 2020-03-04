@@ -56,7 +56,7 @@ RegisterCommand("set/hp/value", (function(source, args)
 	local _EntityHealth = tonumber(arg[1]);
 	SetEntityHealth(PlayerPedId(), _EntityHealth);
 
-    -- Feedback
+	-- Feedback
 	TriggerEvent("chat:addMessage", {
 		args = {"SetEntityHealth  => " .. tostring(_EntityHealth)}
 	})
@@ -71,9 +71,9 @@ RegisterCommand("set/hp/regen/limit", (function(source, args)
 
 	-- Action
 	local _RegenLimit = tonumber(args[1]) * 1.0;
-    SetPlayerHealthRechargeLimit(PlayerId(0), _RegenLimit);
+	SetPlayerHealthRechargeLimit(PlayerId(0), _RegenLimit);
 
-    -- Feedback
+	-- Feedback
     TriggerEvent("chat:addMessage", {
         args = {"SetPlayerHealthRechargeLimit => " .. tostring(_RegenLimit)}
     })
