@@ -22,7 +22,7 @@ RegisterCommand("get/hp/value", (function(source, args)
 
 	-- Feedback
     TriggerEvent("chat:addMessage", {
-            args = {"GetEntityHealth => " .. tostring(_EntityHealth)}
+		args = {"GetEntityHealth => " .. tostring(_EntityHealth)}
 	}) 
 	
 end)
@@ -37,9 +37,9 @@ RegisterCommand("get/hp/regen/limit", (function(source, args)
 	local _PlayerHealthRechargeLimit = GetPlayerHealthRechargeLimit(PlayerId(0))
 
 	-- Feedback
-    TriggerEvent("chat:addMessage", {
-            args = {"GetPlayerHealthRechargeLimit => " .. tostring(_PlayerHealthRechargeLimit)}
-    })
+	TriggerEvent("chat:addMessage", {
+		args = {"GetPlayerHealthRechargeLimit => " .. tostring(_PlayerHealthRechargeLimit)}
+	})
 
     end)
 )
