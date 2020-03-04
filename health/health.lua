@@ -14,7 +14,7 @@
 
 -- GetEntityHealth
 RegisterCommand("get/hp/value", (function(source, args)
-	--	Allows the caller to get the regeneration limit of the local player
+	--	Allows the caller to get the health value of the local player entity
 	--	to the value of the first argument. The value is converted to a float using * 1.0
 
 	-- Action
@@ -49,7 +49,7 @@ RegisterCommand("get/hp/regen/limit", (function(source, args)
 
 -- i. SetEntityHealth
 RegisterCommand("set/hp/value", (function(source, args)
-	--	Allows the caller to set the health value of the local player
+	--	Allows the caller to set the health value of the local player entity
 	--	to the value of the first argument. The value is converted to a float using * 1.0
 
 	-- Action
