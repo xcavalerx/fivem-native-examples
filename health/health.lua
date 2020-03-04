@@ -21,7 +21,7 @@ RegisterCommand("get/hp/value", (function(source, args)
 	local _EntityHealth = GetEntityHealth(PlayerPedId())
 
 	-- Feedback
-    TriggerEvent("chat:addMessage", {
+	TriggerEvent("chat:addMessage", {
 		args = {"GetEntityHealth => " .. tostring(_EntityHealth)}
 	}) 
 	
