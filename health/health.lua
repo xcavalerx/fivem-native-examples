@@ -71,7 +71,7 @@ RegisterCommand("set/hp/regen/limit", (function(source, args)
 
 	-- Action
 	local _RegenLimit = tonumber(args[1]) * 1.0;
-	SetPlayerHealthRechargeLimit(PlayerId(0), _RegenLimit);
+    SetPlayerHealthRechargeLimit(PlayerId(0), _RegenLimit);
 
 	-- Feedback
     TriggerEvent("chat:addMessage", {
