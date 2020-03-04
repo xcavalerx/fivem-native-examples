@@ -66,12 +66,12 @@ RegisterCommand("set/hp/value", (function(source, args)
 
 -- SetPlayerHealthRechargeLimit
 RegisterCommand("set/hp/regen/limit", (function(source, args)
-    -- Allows the caller to set the regeneration limit of the local player
-    -- to the value of the first argument. The value is converted to a float using * 1.0
+	-- Allows the caller to set the regeneration limit of the local player
+	-- to the value of the first argument. The value is converted to a float using * 1.0
 
 	-- Action
 	local _RegenLimit = tonumber(args[1]) * 1.0;
-    SetPlayerHealthRechargeLimit(PlayerId(0), _RegenLimit);
+	SetPlayerHealthRechargeLimit(PlayerId(0), _RegenLimit);
 
 	-- Feedback
     TriggerEvent("chat:addMessage", {
@@ -97,4 +97,3 @@ RegisterCommand("set/hp/regen/mul", (function(source, args)
 
 	end)
 )
---
