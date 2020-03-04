@@ -5,10 +5,10 @@
 ------------------------------------------------------
 ------------------------------------------------------
 -- Cmds:	get/hp/value (x)
---			get/hp/regen/limit (x)
---			set/hp/value (x) 
---			set/hp/regen/limit (x)
---			set/hp/regen/mul (x)
+--		get/hp/regen/limit (x)
+--		set/hp/value (x) 
+--		set/hp/regen/limit (x)
+--		set/hp/regen/mul (x)
 ------------------------------------------------------
 ------------------------------------------------------
 
